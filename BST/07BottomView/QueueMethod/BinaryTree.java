@@ -16,12 +16,8 @@ class BinaryTree {
         printBottomViewRec(root);
     }
 
-    Queue<Integer> queue = new LinkedList<Integer>();
-
     void printBottomViewRec(Node root) {
-        if (root == null) {
-           return;
-        }
+        if (root == null) return;
         printBottomViewRec(root.left);
         printBottomViewRec(root.right);
         if (root.left == null && root.right == null) {
@@ -45,3 +41,10 @@ class BinaryTree {
         tree.printBottomView();
     }
 }
+
+
+
+//      20
+//   8      22
+//  5  3   4  25
+//   10 14

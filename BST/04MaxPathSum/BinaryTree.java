@@ -61,3 +61,8 @@ class BinaryTree {
         System.out.println("maximum path sum is: " + tree.findMaxSum());
     }
 }
+
+//       10
+//   2     10
+// 20  1     -25
+//          3   4
